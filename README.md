@@ -39,8 +39,10 @@ You can run the script as a live web server to handle REST POST uploads.
 venv\Scripts\python api.py
 ```
 **Upload a PDF for test extraction:**
+*Note for Windows users: Use `curl.exe` explicitly in PowerShell to avoid the `Invoke-WebRequest` alias error.*
 ```bash
-curl -F "file=@msme_single_form.pdf" http://localhost:8000/extract
+# In an another terminal window:
+curl.exe -F "file=@msme_single_form.pdf" http://localhost:8000/extract
 ```
 The server will respond with the completely extracted JSON graph payload.
 
