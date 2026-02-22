@@ -4,13 +4,7 @@ This project provides a complete, high-accuracy Optical Character Recognition (O
 
 This pipeline features a **flawless zero-margin layout extraction approach** that avoids the inconsistencies and margin-bleeding artifacts of traditional AI model prediction.
 
-## Overview
-
-The repository consists of two iterations of the extraction methodology:
-1. **Legacy LayoutLM Approach (Steps 1-6)**: Initially developed using Microsoft's LayoutLM to parse and classify bounding boxes conceptually.
-2. **Template-Guided DocTR Approach (Final Version)**: Replaced LayoutLM with a strictly deterministic region-of-interest (ROI) matching script. By locking explicit labels to their parent extraction boxes, we completely eliminated bounding box bleeding for a 100% accurate parse.
-
-## Final Pipeline Features
+## Pipeline Features
 
 - **Extreme Accuracy**: Deterministic mapping completely eliminates cross-row data bleeding.
 - **FastAPI Endpoints**: Deployable as a web microservice taking immediate PDF REST calls.
