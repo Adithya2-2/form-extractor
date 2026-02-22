@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+eval_tmp/
+data/
+extracted/
+extracted_test/
+msme_ocr_model/
+msme_ocr_model_final/
+*.crdownload
+.DS_Store
